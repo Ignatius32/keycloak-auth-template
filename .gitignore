@@ -31,7 +31,7 @@ ENV/
 .env.prod.*
 .env.backup.*
 *.env.backup
-
+.env
 # IDE
 .vscode/
 .idea/
