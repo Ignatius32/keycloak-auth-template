@@ -41,14 +41,14 @@ services:
     environment:
       # Database Configuration
       DATABASE_URL: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
-      DATABASE_ECHO: false
+      DATABASE_ECHO: "false"
       
       # Keycloak Configuration (external)
       KEYCLOAK_BASE_URL: ${KEYCLOAK_BASE_URL:-http://localhost:8080}
       KEYCLOAK_REALM: ${KEYCLOAK_REALM}
       KEYCLOAK_CLIENT_ID: ${KEYCLOAK_CLIENT_ID}
       KEYCLOAK_CLIENT_SECRET: ${KEYCLOAK_CLIENT_SECRET}
-      KEYCLOAK_ADMIN_USER: ${KEYCLOAK_ADMIN}
+      KEYCLOAK_ADMIN_USER: ${KEYCLOAK_ADMIN_USER}
       KEYCLOAK_ADMIN_PASSWORD: ${KEYCLOAK_ADMIN_PASSWORD}
       
       # JWT Configuration
